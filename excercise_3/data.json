@@ -1,0 +1,75 @@
+{
+    "tags": {
+        "animals": {
+            "parent": null,
+            "children": [
+                "fish",
+                "birds"
+            ]
+        },
+        "fish": {
+            "parent": "animals",
+            "children": [
+                "sushi_fish",
+                "carp"
+            ]
+        },
+        "birds": {
+            "parent": "animals",
+            "children": [
+                "hawk",
+                "pidgeon"
+            ]
+        },
+        "sushi_fish": {
+            "parent": "fish",
+            "children": [
+                "salmon",
+                "tuna"
+            ]
+        },
+        "salmon": {
+            "parent": "sushi_fish",
+            "children": []
+        },
+        "tuna": {
+            "parent": "sushi_fish",
+            "children": []
+        },
+        "carp": {
+            "parent": "fish",
+            "children": []
+        },
+        "hawk": {
+            "parent": "birds",
+            "children": []
+        },
+        "pidgeon": {
+            "parent": "birds",
+            "children": []
+        }
+
+    },
+    "documents": {
+        "animals": [
+            "http://127.0.0.1:5000/doc1",
+            "http://127.0.0.1:5000/doc2"
+        ],
+        "fish": [
+            "http://127.0.0.1:5000/doc3",
+            "http://127.0.0.1:5000/doc4"
+        ],
+        "birds": [
+            "http://127.0.0.1:5000/doc3",
+            "http://127.0.0.1:5000/doc6"
+        ],
+        "lizards": [
+            "http://127.0.0.1:5000/doc4",
+            "http://127.0.0.1:5000/doc6"
+        ],
+        "sushi_fish": [
+            "http://127.0.0.1:5000/doc1",
+            "http://127.0.0.1:5000/doc5"
+        ]
+    }
+}
